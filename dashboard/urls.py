@@ -1,8 +1,26 @@
-from django.urls import path
+# dashboard/urls.py
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
 from . import views
+from . import api_views
+
+# Create a router for REST API
+router = DefaultRouter()
+router.register('diseases', api_views.DiseaseViewSet)
+router.register('patients', api_views.PatientViewSet)
+router.register('doctors', api_views.DoctorViewSet)
+router.register('cases', api_views.DiseaseCaseViewSet)
+router.register('appointments', api_views.AppointmentViewSet)
+router.register('symptoms', api_views.SymptomViewSet)
+router.register('symptom-records', api_views.PatientSymptomRecordViewSet)
 
 urlpatterns = [
-    # Dashboard home
+    # API endpoints for Postman testing
+    path('api/', include(router.urls)),
+    path('api/dashboard-summary/', api_views.api_dashboard_summary,
+         name='api-dashboard-summary'),
+
+    # Original dashboard URLs (keep these for web UI)
     path('', views.dashboard_home, name='dashboard-home'),
     path('disease-trends/', views.disease_trends, name='disease-trends'),
 
