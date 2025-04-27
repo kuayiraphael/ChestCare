@@ -28,4 +28,7 @@ urlpatterns = [
     # Current user info
     path('api/current-user/', api_views.api_current_user_info,
          name='api-current-user'),
+
+    path('api/generate-past-statistics/', api_views.generate_past_statistics,
+         name='api-generate-past-statistics'),
 ]

@@ -410,3 +410,118 @@ def api_current_user_info(request):
     }
 
     return Response(response_data)
+
+# dashboard/api_views.py
+# Add this new endpoint function
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def generate_past_statistics(request):
+    """
+    API endpoint to generate or update disease statistics for past periods
+    Request Format:
+    {
+        "disease_type": "pneumonia",  # Optional, if not provided will update all diseases
+        "start_date": "2024-01-01", 
+        "end_date": "2025-04-27"  # Optional, defaults to current date
+    }
+    """
+    from datetime import datetime
+    from dateutil.relativedelta import relativedelta
+
+    try:
+        # Parse request data
+        data = request.data
+        disease_type = data.get('disease_type', None)
+        start_date_str = data.get('start_date', None)
+        end_date_str = data.get('end_date', None)
+
+        if not start_date_str:
+            return Response({"error": "start_date is required"}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Parse dates
+        start_date = datetime.strptime(start_date_str, '%Y-%m-%d').date()
+        end_date = datetime.strptime(
+            end_date_str, '%Y-%m-%d').date() if end_date_str else timezone.now().date()
+
+        # Get disease if type provided
+        disease = None
+        if disease_type:
+            try:
+                disease = Disease.objects.get(type=disease_type)
+            except Disease.DoesNotExist:
+                return Response({"error": f"Disease with type '{disease_type}' not found"},
+                                status=status.HTTP_404_NOT_FOUND)
+
+        # Process each month in the range
+        current_date = start_date
+        months_processed = 0
+        stats_created = []
+
+        while current_date <= end_date:
+            month = current_date.month
+            year = current_date.year
+
+            # Process either specific disease or all diseases
+            diseases_to_process = [
+                disease] if disease else Disease.objects.all()
+
+            for disease_obj in diseases_to_process:
+                # Count cases for this disease in this month/year
+                cases = DiseaseCase.objects.filter(
+                    disease=disease_obj,
+                    diagnosis_date__month=month,
+                    diagnosis_date__year=year
+                )
+                current_count = cases.count()
+
+                # Get previous month for percent change calculation
+                prev_month = 12 if month == 1 else month - 1
+                prev_year = year - 1 if month == 1 else year
+
+                try:
+                    prev_stat = DiseaseStatistic.objects.get(
+                        disease=disease_obj,
+                        month=prev_month,
+                        year=prev_year
+                    )
+                    prev_count = prev_stat.case_count
+                    percent_change = ((current_count - prev_count) /
+                                      prev_count * 100) if prev_count else 0
+                except DiseaseStatistic.DoesNotExist:
+                    percent_change = 0
+
+                # Update or create statistics record
+                stat, created = DiseaseStatistic.objects.update_or_create(
+                    disease=disease_obj,
+                    month=month,
+                    year=year,
+                    defaults={
+                        'case_count': current_count,
+                        'percent_change': round(percent_change, 2)
+                    }
+                )
+
+                stats_created.append(f"{disease_obj.name} - {month}/{year}")
+
+            months_processed += 1
+
+            # Move to next month
+            current_date = (
+                current_date + relativedelta(months=1)).replace(day=1)
+
+        # Return success response with details
+        return Response({
+            "success": True,
+            "message": f"Statistics updated for {months_processed} months",
+            "start_date": start_date.isoformat(),
+            "end_date": end_date.isoformat(),
+            "disease": disease.name if disease else "All diseases",
+            "periods_updated": len(stats_created),
+            # Show first 10 entries as examples
+            "sample_entries": stats_created[:10]
+        })
+
+    except Exception as e:
+        return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
