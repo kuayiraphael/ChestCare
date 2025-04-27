@@ -130,6 +130,8 @@ def disease_trends(request):
 
     return Response(response_data)
 
+# Update the get_disease_data function in dashboard/views.py
+
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
@@ -139,10 +141,22 @@ def get_disease_data(request, disease_type):
         # Get the disease by type
         disease = Disease.objects.get(type=disease_type)
 
+        # Get time range from query parameters or use defaults
+        months = int(request.query_params.get('months', 12))
+        end_date = timezone.now().date()
+        start_date = end_date - timedelta(days=30*months)
+
         # Get statistics for this disease
         stats = DiseaseStatistic.objects.filter(
-            disease=disease
+            disease=disease,
+            year__gte=start_date.year,
+            year__lte=end_date.year
         ).order_by('year', 'month')
+
+        # Filter for the correct months if spanning multiple years
+        if start_date.year == end_date.year:
+            stats = stats.filter(month__gte=start_date.month,
+                                 month__lte=end_date.month)
 
         # Format the data for charts
         data = []
