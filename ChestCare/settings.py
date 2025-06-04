@@ -9,14 +9,12 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-# Add these at the top of your settings.py
 import os
 from dotenv import load_dotenv
 from urllib.parse import urlparse
 from pathlib import Path
 from datetime import timedelta
 from decouple import config
-# Add these at the top of your settings.py
 
 load_dotenv()
 
@@ -35,7 +33,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     # Third party apps
     'rest_framework',
     'rest_framework_simplejwt',
@@ -54,6 +52,7 @@ INSTALLED_APPS = [
     'accounts',
     'dashboard',
 ]
+
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -65,6 +64,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 
 ROOT_URLCONF = 'ChestCare.urls'
 
@@ -86,9 +86,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'ChestCare.wsgi.application'
 
 
-
-
-# Replace the DATABASES section of your settings.py with this
+#  DATABASES section 
 tmpPostgres = urlparse(os.getenv("DATABASE_URL"))
 
 DATABASES = {
