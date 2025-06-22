@@ -8,5 +8,7 @@ urlpatterns = [
     path('api/auth/', include('accounts.urls')),
     path('dashboard/', include('dashboard.urls')),
     path('', RedirectView.as_view(url='dashboard/'), name='home'),
+    path('api/ml/', include('ml_predict.urls')),  # New ML endpoints
+
     
 ]
