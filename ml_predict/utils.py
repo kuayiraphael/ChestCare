@@ -22,17 +22,31 @@ class ChestXrayPredictor:
 
     def load_models(self):
         """Load all ML models on initialization"""
-        try:
-            for disease, model_file in self.model_paths.items():
-                model_path = os.path.join(settings.ml_predict_PATH, model_file)
-                if os.path.exists(model_path):
+        failed_models = []
+        error_models = []
+        for disease, model_file in self.model_paths.items():
+            model_path = os.path.join(
+                str(settings.ML_PREDICT_PATH), model_file)
+            if os.path.exists(model_path):
+                try:
                     self.models[disease] = tf.keras.models.load_model(
                         model_path)
                     logger.info(f"Loaded {disease} model successfully")
-                else:
-                    logger.warning(f"Model file not found: {model_path}")
-        except Exception as e:
-            logger.error(f"Error loading models: {str(e)}")
+                except Exception as e:
+                    logger.error(f"Error loading {disease} model: {str(e)}")
+                    error_models.append(disease)
+            else:
+                logger.warning(f"Model file not found: {model_path}")
+                failed_models.append(disease)
+        if not failed_models and not error_models:
+            logger.info("ML models loaded successfully")
+        else:
+            if failed_models:
+                logger.error(
+                    f"The following models were not found: {', '.join(failed_models)}")
+            if error_models:
+                logger.error(
+                    f"The following models failed to load: {', '.join(error_models)}")
 
     def preprocess_image(self, image_path, target_size=(224, 224)):
         """Preprocess X-ray image for prediction"""

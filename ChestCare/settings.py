@@ -26,16 +26,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
-ml_predict_PATH = BASE_DIR / 'ml_predict' / 'saved_models'
+ML_PREDICT_PATH = BASE_DIR / 'ml_predict' / 'saved_models'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-$2-6h^(91zz&h)8nd!m=0670qbd(mqd4v5z%nt@52ic)9v2+qr'
+SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config("DEBUG", default=False, cast=bool)
 
 ALLOWED_HOSTS = ['*']
 
@@ -95,7 +95,7 @@ WSGI_APPLICATION = 'ChestCare.wsgi.application'
 
 
 #  DATABASES section
-tmpPostgres = urlparse(os.getenv("DATABASE_URL"))
+tmpPostgres = urlparse(config("DATABASE_URL"))
 
 DATABASES = {
     'default': {
@@ -226,3 +226,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 if not DEBUG:
     SECURE_SSL_REDIRECT = True
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+TF_ENABLE_ONEDNN_OPTS = 0
