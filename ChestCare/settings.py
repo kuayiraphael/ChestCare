@@ -17,6 +17,8 @@ from urllib.parse import urlparse
 from pathlib import Path
 from datetime import timedelta
 from decouple import config
+import django_heroku
+import dj_database_url
 
 load_dotenv()
 
@@ -142,7 +144,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -215,12 +216,12 @@ LOGGING = {
 # CORS Settings
 CORS_ALLOW_ALL_ORIGINS = True
 
-# Add this to the end of settings.py
+# User Account
 AUTH_USER_MODEL = 'accounts.User'
 
 # Static files configuration
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 if not DEBUG:

@@ -66,6 +66,9 @@ class Patient(models.Model):
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
     phone = models.CharField(max_length=20)
     email = models.EmailField(blank=True, null=True)
+    xray_image_url = models.URLField(
+        blank=True, null=True, help_text="Cloudinary URL for chest X-ray image")
+
     status = models.CharField(
         max_length=20, choices=STATUS_CHOICES, default='undiagnosed')
 
@@ -120,6 +123,17 @@ class Patient(models.Model):
 
     # Additional Notes
     additional_notes = models.TextField(blank=True)
+    created_by = models.ForeignKey(
+        'accounts.User',
+        on_delete=models.CASCADE,
+        related_name='created_patients',
+        help_text="Doctor who created this patient record"
+    )
+    profile_image_url = models.URLField(
+        blank=True,
+        null=True,
+        help_text="Cloudinary URL for patient profile image"
+    )
 
     # Timestamps
     created_at = models.DateTimeField(auto_now_add=True)
@@ -145,6 +159,7 @@ class PatientSymptomRecord(models.Model):
     ], default='moderate')
     notes = models.TextField(blank=True, null=True)
     recorded_date = models.DateField(auto_now_add=True)
+    
 
     def __str__(self):
         return f"{self.patient} - {self.symptom} ({self.severity})"

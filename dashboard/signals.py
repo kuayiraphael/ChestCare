@@ -2,6 +2,8 @@
 from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
 from .models import DiseaseCase
+from accounts.models import User
+from .models import Doctor
 from datetime import datetime
 from .utils import update_disease_statistics
 
@@ -26,3 +28,10 @@ def update_statistics_on_case_delete(sender, instance, **kwargs):
 
     # Update statistics for this disease and month/year
     update_disease_statistics(disease=instance.disease, month=month, year=year)
+
+
+@receiver(post_save, sender=User)
+def create_doctor_profile(sender, instance, created, **kwargs):
+    if created:
+        # Avoid duplicate doctor profiles
+        Doctor.objects.get_or_create(user=instance)

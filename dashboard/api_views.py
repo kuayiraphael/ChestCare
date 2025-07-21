@@ -82,6 +82,10 @@ class PatientViewSet(viewsets.ModelViewSet):
     serializer_class = PatientSerializer
     permission_classes = [IsAuthenticated]
 
+    def perform_create(self, serializer):
+        """Automatically set the created_by field to current user when creating a patient"""
+        serializer.save(created_by=self.request.user)
+
     @action(detail=True, methods=['get'], url_path='details')
     def get_patient_details(self, request, pk=None):
         """Get detailed patient information with related data"""
@@ -150,8 +154,8 @@ class PatientViewSet(viewsets.ModelViewSet):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
+    
+    
 class DoctorViewSet(viewsets.ModelViewSet):
     queryset = Doctor.objects.all()
     serializer_class = DoctorSerializer

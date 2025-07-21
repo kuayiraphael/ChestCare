@@ -1,4 +1,4 @@
-# In ml_predict/apps.py
+#  ml_predict/apps.py
 from django.apps import AppConfig
 
 

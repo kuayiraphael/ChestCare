@@ -37,14 +37,22 @@ class SymptomSerializer(serializers.ModelSerializer):
 
 
 class PatientSerializer(serializers.ModelSerializer):
+    # Existing computed fields
     full_name = serializers.SerializerMethodField()
     gender_display = serializers.SerializerMethodField()
     status_display = serializers.SerializerMethodField()
     age = serializers.SerializerMethodField()
 
+    # New created_by fields
+    created_by_name = serializers.CharField(
+        source='created_by.get_full_name', read_only=True)
+    created_by_email = serializers.CharField(
+        source='created_by.email', read_only=True)
+
     class Meta:
         model = Patient
         fields = '__all__'
+        read_only_fields = ('created_by', 'created_at', 'updated_at')
 
     def get_full_name(self, obj):
         return f"{obj.first_name} {obj.last_name}"

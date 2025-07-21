@@ -15,7 +15,7 @@ class PatientForm(forms.ModelForm):
         model = Patient
         fields = [
             'first_name', 'last_name', 'date_of_birth', 'gender',
-            'phone', 'email', 'status',
+            'phone', 'email', 'status', 'profile_image_url',
             'diabetes', 'hypertension', 'asthma', 'allergies',
             'heart_disease', 'stroke', 'cancer', 'depression',
             'temperature', 'heart_rate', 'blood_pressure_systolic',
@@ -23,7 +23,7 @@ class PatientForm(forms.ModelForm):
             'smoking_status', 'family_history', 'surgical_history',
             'prior_tb_exposure', 'previous_cardiac_conditions',
             'blood_glucose', 'cholesterol', 'hba1c',
-            'white_blood_cell_count', 'c_reactive_protein', 'bnp',
+            'white_blood_cell_count', 'c_reactive_protein', 'bnp',  'xray_image_url',
             'additional_notes'
         ]
         widgets = {
