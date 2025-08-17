@@ -107,6 +107,11 @@ DATABASES = {
         'PASSWORD': tmpPostgres.password,
         'HOST': tmpPostgres.hostname,
         'PORT': 5432,
+        'OPTIONS': {
+            'sslmode': 'require',
+            'connect_timeout': 120,  # Increased timeout
+        },
+        'CONN_MAX_AGE': 0,  # Don't reuse connections
     }
 }
 

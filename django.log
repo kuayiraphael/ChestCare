@@ -358,3 +358,201 @@ Loaded pneumonia model successfully
 Loaded tuberculosis model successfully
 Loaded pulmonary_hypertension model successfully
 ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Unexpected error: null value in column "confidence_score" of relation "ml_predict_predictionresult" violates not-null constraint
+DETAIL:  Failing row contains (1, xray_uploads/c-xray.jpeg, , null, null, 2025-08-17 22:13:01.513995+00, f, 3, null).
+
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Prediction error: null value in column "confidence_score" of relation "ml_predict_predictionresult" violates not-null constraint
+DETAIL:  Failing row contains (2, xray_uploads/c-xray_jXRQuQB.jpeg, , null, null, 2025-08-17 22:36:06.345442+00, f, 3, null).
+
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Unexpected error: null value in column "confidence_score" of relation "ml_predict_predictionresult" violates not-null constraint
+DETAIL:  Failing row contains (3, xray_uploads/c-xray_FzHTeKJ.jpeg, , null, null, 2025-08-17 22:57:19.545259+00, f, 3, null).
+
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Unexpected error: null value in column "confidence_score" of relation "ml_predict_predictionresult" violates not-null constraint
+DETAIL:  Failing row contains (4, xray_uploads/c-xray_GoR6qt0.jpeg, , null, null, 2025-08-17 23:08:38.690739+00, f, 3, null).
+
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Starting prediction for image: C:\Users\Kuayi\Desktop\Backend\ChestCare\media\xray_uploads\c-xray_Ng2WQ5M.jpeg
+Error predicting cardiomegaly: Input 0 of layer "functional_8" is incompatible with the layer: expected shape=(None, 28, 28, 3), found shape=(1, 224, 224, 3)
+Error predicting pneumonia: Input 0 of layer "functional_8" is incompatible with the layer: expected shape=(None, 28, 28, 3), found shape=(1, 224, 224, 3)
+Error predicting tuberculosis: Input 0 of layer "functional_8" is incompatible with the layer: expected shape=(None, 28, 28, 3), found shape=(1, 224, 224, 3)
+Error predicting pulmonary_hypertension: Input 0 of layer "functional_8" is incompatible with the layer: expected shape=(None, 28, 28, 3), found shape=(1, 224, 224, 3)
+Final prediction result: {'predicted_disease': 'cardiomegaly', 'confidence_score': 0.0, 'all_predictions': {'cardiomegaly': 0.0, 'pneumonia': 0.0, 'tuberculosis': 0.0, 'pulmonary_hypertension': 0.0}}
+Starting prediction for image: C:\Users\Kuayi\Desktop\Backend\ChestCare\media\xray_uploads\c-xray_XieBaa9.jpeg
+Error predicting cardiomegaly: Input 0 of layer "functional_8" is incompatible with the layer: expected shape=(None, 28, 28, 3), found shape=(1, 224, 224, 3)
+Error predicting pneumonia: Input 0 of layer "functional_8" is incompatible with the layer: expected shape=(None, 28, 28, 3), found shape=(1, 224, 224, 3)
+Error predicting tuberculosis: Input 0 of layer "functional_8" is incompatible with the layer: expected shape=(None, 28, 28, 3), found shape=(1, 224, 224, 3)
+Error predicting pulmonary_hypertension: Input 0 of layer "functional_8" is incompatible with the layer: expected shape=(None, 28, 28, 3), found shape=(1, 224, 224, 3)
+Final prediction result: {'predicted_disease': 'cardiomegaly', 'confidence_score': 0.0, 'all_predictions': {'cardiomegaly': 0.0, 'pneumonia': 0.0, 'tuberculosis': 0.0, 'pulmonary_hypertension': 0.0}}
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Starting prediction for image: C:\Users\Kuayi\Desktop\Backend\ChestCare\media\xray_uploads\c-xray_DZnPt1S.jpeg
+Prediction error: cannot access local variable 'model' where it is not associated with a value
+Prediction error: cannot access local variable 'model' where it is not associated with a value
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Loaded cardiomegaly model successfully
+Loaded pneumonia model successfully
+Loaded tuberculosis model successfully
+Loaded pulmonary_hypertension model successfully
+ML models loaded successfully
+Starting prediction for image: C:\Users\Kuayi\Desktop\Backend\ChestCare\media\xray_uploads\c-xray_2eO5o2x.jpeg
+Prediction for cardiomegaly: 0.9416
+Prediction for pneumonia: 0.9416
+Prediction for tuberculosis: 0.9416
+Prediction for pulmonary_hypertension: 0.9416
+Final prediction result: {'predicted_disease': 'cardiomegaly', 'confidence_score': 0.9416360259056091, 'all_predictions': {'cardiomegaly': 0.9416360259056091, 'pneumonia': 0.9416360259056091, 'tuberculosis': 0.9416360259056091, 'pulmonary_hypertension': 0.9416360259056091}}
