@@ -2,6 +2,7 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from . import api_views
+from . import views
 
 # Create a router for REST API
 router = DefaultRouter()
@@ -31,4 +32,8 @@ urlpatterns = [
 
     path('api/generate-past-statistics/', api_views.generate_past_statistics,
          name='api-generate-past-statistics'),
+
+    path('api/doctor-patients/', views.doctor_patients, name='doctor-patients'),
+
+
 ]

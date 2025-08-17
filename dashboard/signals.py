@@ -4,7 +4,6 @@ from django.dispatch import receiver
 from .models import DiseaseCase
 from accounts.models import User
 from .models import Doctor
-from datetime import datetime
 from .utils import update_disease_statistics
 
 

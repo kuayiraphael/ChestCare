@@ -76,6 +76,8 @@ class DiseaseViewSet(viewsets.ModelViewSet):
         except Disease.DoesNotExist:
             return Response({'error': 'Disease not found'}, status=status.HTTP_404_NOT_FOUND)
 
+# dashboard/api_views.py - Updated PatientViewSet
+
 
 class PatientViewSet(viewsets.ModelViewSet):
     queryset = Patient.objects.all()
@@ -85,6 +87,36 @@ class PatientViewSet(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         """Automatically set the created_by field to current user when creating a patient"""
         serializer.save(created_by=self.request.user)
+
+    def update(self, request, *args, **kwargs):
+        """Custom update method with better error handling"""
+        partial = kwargs.pop('partial', False)
+        instance = self.get_object()
+
+        # Log the incoming data for debugging
+        print(f"Updating patient {instance.id} with data: {request.data}")
+
+        serializer = self.get_serializer(
+            instance, data=request.data, partial=partial)
+
+        if serializer.is_valid():
+            self.perform_update(serializer)
+
+            if getattr(instance, '_prefetched_objects_cache', None):
+                # If 'prefetch_related' has been applied to a queryset, we need to
+                # forcibly invalidate the prefetch cache on the instance.
+                instance._prefetched_objects_cache = {}
+
+            return Response(serializer.data)
+        else:
+            # Log validation errors for debugging
+            print(f"Validation errors: {serializer.errors}")
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def partial_update(self, request, *args, **kwargs):
+        """Handle PATCH requests"""
+        kwargs['partial'] = True
+        return self.update(request, *args, **kwargs)
 
     @action(detail=True, methods=['get'], url_path='details')
     def get_patient_details(self, request, pk=None):
@@ -154,7 +186,6 @@ class PatientViewSet(viewsets.ModelViewSet):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
     
 class DoctorViewSet(viewsets.ModelViewSet):
     queryset = Doctor.objects.all()
