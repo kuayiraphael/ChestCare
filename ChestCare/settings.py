@@ -109,9 +109,9 @@ DATABASES = {
         'PORT': 5432,
         'OPTIONS': {
             'sslmode': 'require',
-            'connect_timeout': 120,  # Increased timeout
+            'connect_timeout': 120,  
         },
-        'CONN_MAX_AGE': 0,  # Don't reuse connections
+        'CONN_MAX_AGE': 0,  
     }
 }
 
@@ -172,11 +172,11 @@ CACHES = {
 # In views.py, you can cache frequent predictions
 # SimpleJWT settings
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
-    'ROTATE_REFRESH_TOKENS': False,
+    'ROTATE_REFRESH_TOKENS': True,
     'BLACKLIST_AFTER_ROTATION': True,
-    'UPDATE_LAST_LOGIN': False,
+    'UPDATE_LAST_LOGIN': True,
 
     'ALGORITHM': 'HS256',
     'SIGNING_KEY': SECRET_KEY,
