@@ -181,14 +181,74 @@ class Doctor(models.Model):
         _('years of experience'), default=0)
     bio = models.TextField(_('bio'), blank=True, null=True)
 
+    # Add these new fields
+    avatar_url = models.URLField(
+        _('avatar URL'),
+        blank=True,
+        null=True,
+        help_text="Cloudinary URL for doctor's profile picture"
+    )
+    languages = models.JSONField(
+        _('languages spoken'),
+        default=list,
+        blank=True,
+        help_text="List of languages the doctor speaks"
+    )
+    license_number = models.CharField(
+        _('medical license number'),
+        max_length=50,
+        blank=True,
+        null=True
+    )
+    consultation_fee = models.DecimalField(
+        _('consultation fee'),
+        max_digits=10,
+        decimal_places=2,
+        blank=True,
+        null=True
+    )
+    working_hours_start = models.TimeField(
+        _('working hours start'),
+        default='09:00'
+    )
+    working_hours_end = models.TimeField(
+        _('working hours end'),
+        default='17:00'
+    )
+    is_available = models.BooleanField(
+        _('is available for appointments'),
+        default=True
+    )
+
+    # Timestamps
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
     def __str__(self):
         return f"Dr. {self.user.first_name} {self.user.last_name}"
+
+    @property
+    def full_name(self):
+        return f"Dr. {self.user.first_name} {self.user.last_name}"
+
+    @property
+    def patient_count(self):
+        """Get total unique patients treated by this doctor"""
+        return DiseaseCase.objects.filter(
+            doctor=self
+        ).values('patient').distinct().count()
+
+    @property
+    def total_diagnoses(self):
+        """Get total diagnoses made by this doctor"""
+        return DiseaseCase.objects.filter(doctor=self).count()
 
     class Meta:
         verbose_name = _('Doctor')
         verbose_name_plural = _('Doctors')
+        ordering = ['-created_at']
 
-
+        
 class DiseaseCase(models.Model):
     """Model for tracking disease cases"""
     patient = models.ForeignKey(
@@ -229,12 +289,18 @@ class Appointment(models.Model):
         DiseaseCase, on_delete=models.SET_NULL, null=True, blank=True, related_name='appointments')
     date = models.DateField(_('appointment date'))
     time = models.TimeField(_('appointment time'))
-    appointment_type = models.CharField(_('appointment type'), max_length=100, choices=[
-        ('initial', 'Initial Consultation'),
-        ('followup', 'Follow-up'),
-        ('checkup', 'Regular Checkup'),
-        ('emergency', 'Emergency'),
-    ])
+    appointment_type = models.CharField(
+        _('appointment type'),
+        max_length=100,
+        choices=[
+            ('consultation', 'Consultation'),
+            ('follow_up', 'Follow Up'),
+            ('checkup', 'Check Up'),
+            ('emergency', 'Emergency'),
+            ('screening', 'Screening'),
+        ]
+    )
+
     status = models.CharField(_('status'), max_length=50, choices=[
         ('scheduled', 'Scheduled'),
         ('completed', 'Completed'),

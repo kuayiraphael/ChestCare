@@ -407,3 +407,59 @@ def doctor_appointments(request):
 
     except Exception as e:
         return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def doctor_profile_summary(request):
+    """Get a comprehensive doctor profile summary"""
+    try:
+        doctor = request.user.doctor_profile
+        user = request.user
+
+        # Basic profile info
+        profile_data = {
+            'id': doctor.id,
+            'name': f"Dr. {user.first_name} {user.last_name}",
+            'specialty': doctor.specialty,
+            'email': user.email,
+            'phone': user.phone_number,
+            'hospital': doctor.hospital,
+            'bio': doctor.bio,
+            'years_of_experience': doctor.years_of_experience,
+            # If you add this field
+            'avatar_url': getattr(doctor, 'avatar_url', None),
+        }
+
+        # Statistics
+        total_patients = DiseaseCase.objects.filter(
+            doctor=doctor
+        ).values('patient').distinct().count()
+
+        total_diagnoses = DiseaseCase.objects.filter(doctor=doctor).count()
+
+        today = timezone.now().date()
+        todays_appointments = Appointment.objects.filter(
+            doctor=doctor,
+            date=today,
+            status__in=['scheduled', 'rescheduled']
+        ).count()
+
+        stats = {
+            'total_patients': total_patients,
+            'total_diagnoses': total_diagnoses,
+            'todays_appointments': todays_appointments,
+            'avg_response_time': '2.4 hours',  # Mock data
+            'accuracy_rate': '94.3%'  # Mock data
+        }
+
+        return Response({
+            'profile': profile_data,
+            'statistics': stats
+        })
+
+    except Exception as e:
+        return Response(
+            {'error': f'Failed to fetch profile: {str(e)}'},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        )

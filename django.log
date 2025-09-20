@@ -1031,3 +1031,798 @@ Generating Grad-CAM for primary prediction: pulmonary_hypertension
 Could not create gradient model: The layer sequential_5 has never been called and thus has no defined input.
 Failed to generate Grad-CAM for pulmonary_hypertension
 Primary Grad-CAM generation failed
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Starting prediction for image: C:\Users\Kuayi\Desktop\Backend\ChestCare\media\xray_uploads\normal_MV0szcz.jpeg
+Prediction for cardiomegaly: 0.5309
+Prediction for pneumonia: 0.8902
+Prediction for tuberculosis: 0.7653
+Prediction for pulmonary_hypertension: 0.9412
+Final prediction result: {'predicted_disease': 'pulmonary_hypertension', 'confidence_score': 0.9412029981613159, 'all_predictions': {'cardiomegaly': 0.5308641195297241, 'pneumonia': 0.8901776671409607, 'tuberculosis': 0.765263557434082, 'pulmonary_hypertension': 0.9412029981613159}}
+Generating Grad-CAM for primary prediction: pulmonary_hypertension
+Could not create gradient model: The layer sequential_5 has never been called and thus has no defined input.
+Failed to generate Grad-CAM for pulmonary_hypertension
+Primary Grad-CAM generation failed
+Grad-CAM not found, attempting to generate for pulmonary_hypertension
+Could not create gradient model: The layer sequential_5 has never been called and thus has no defined input.
+Failed to generate Grad-CAM for pulmonary_hypertension
+Error generating missing Grad-CAM: Grad-CAM image could not be generated
+Starting prediction for image: C:\Users\Kuayi\Desktop\Backend\ChestCare\media\xray_uploads\TB_nw8p9Id.gif
+Prediction for cardiomegaly: 0.9669
+Prediction for pneumonia: 0.5080
+Prediction for tuberculosis: 0.9050
+Prediction for pulmonary_hypertension: 0.8667
+Final prediction result: {'predicted_disease': 'cardiomegaly', 'confidence_score': 0.9668743014335632, 'all_predictions': {'cardiomegaly': 0.9668743014335632, 'pneumonia': 0.5080035924911499, 'tuberculosis': 0.9050040245056152, 'pulmonary_hypertension': 0.8667083978652954}}
+Generating Grad-CAM for primary prediction: cardiomegaly
+Primary Grad-CAM image generated and saved successfully
+Regenerating Grad-CAM for disease: cardiomegaly
+Regenerating Grad-CAM for disease: cardiomegaly
+Generating Grad-CAM for different disease: pneumonia
+Generating Grad-CAM for different disease: tuberculosis
+Regenerating Grad-CAM for disease: cardiomegaly
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Starting prediction for image: C:\Users\Kuayi\Desktop\Backend\ChestCare\media\xray_uploads\c-xray_Zy9GrCZ.jpeg
+Prediction for cardiomegaly: 0.9997
+Prediction for pneumonia: 0.9954
+Prediction for tuberculosis: 0.9416
+Prediction for pulmonary_hypertension: 0.9335
+Final prediction result: {'predicted_disease': 'cardiomegaly', 'confidence_score': 0.9997194409370422, 'all_predictions': {'cardiomegaly': 0.9997194409370422, 'pneumonia': 0.9954084753990173, 'tuberculosis': 0.9416360259056091, 'pulmonary_hypertension': 0.9334887266159058}}
+Generating Grad-CAM for primary prediction: cardiomegaly
+Primary Grad-CAM image generated and saved successfully
+Generating Grad-CAM for different disease: pneumonia
+Starting prediction for image: C:\Users\Kuayi\Desktop\Backend\ChestCare\media\xray_uploads\xray-2_hJGIria.jpeg
+Prediction for cardiomegaly: 0.9933
+Prediction for pneumonia: 0.9662
+Prediction for tuberculosis: 0.9527
+Prediction for pulmonary_hypertension: 0.5306
+Final prediction result: {'predicted_disease': 'cardiomegaly', 'confidence_score': 0.9933339953422546, 'all_predictions': {'cardiomegaly': 0.9933339953422546, 'pneumonia': 0.9661529064178467, 'tuberculosis': 0.9526857733726501, 'pulmonary_hypertension': 0.5305667519569397}}
+Generating Grad-CAM for primary prediction: cardiomegaly
+Primary Grad-CAM image generated and saved successfully
+Starting prediction for image: C:\Users\Kuayi\Desktop\Backend\ChestCare\media\xray_uploads\c-xray_vHrGGF6.jpeg
+Prediction for cardiomegaly: 0.9997
+Prediction for pneumonia: 0.9954
+Prediction for tuberculosis: 0.9416
+Prediction for pulmonary_hypertension: 0.9335
+Final prediction result: {'predicted_disease': 'cardiomegaly', 'confidence_score': 0.9997194409370422, 'all_predictions': {'cardiomegaly': 0.9997194409370422, 'pneumonia': 0.9954084753990173, 'tuberculosis': 0.9416360259056091, 'pulmonary_hypertension': 0.9334887266159058}}
+Generating Grad-CAM for primary prediction: cardiomegaly
+Primary Grad-CAM image generated and saved successfully
+Starting prediction for image: C:\Users\Kuayi\Desktop\Backend\ChestCare\media\xray_uploads\TB_KHWyQLs.gif
+Prediction for cardiomegaly: 0.9669
+Prediction for pneumonia: 0.5080
+Prediction for tuberculosis: 0.9050
+Prediction for pulmonary_hypertension: 0.8667
+Final prediction result: {'predicted_disease': 'cardiomegaly', 'confidence_score': 0.9668743014335632, 'all_predictions': {'cardiomegaly': 0.9668743014335632, 'pneumonia': 0.5080035924911499, 'tuberculosis': 0.9050040245056152, 'pulmonary_hypertension': 0.8667083978652954}}
+Generating Grad-CAM for primary prediction: cardiomegaly
+Primary Grad-CAM image generated and saved successfully
+Starting prediction for image: C:\Users\Kuayi\Desktop\Backend\ChestCare\media\xray_uploads\normal_5rXCQ8y.jpeg
+Prediction for cardiomegaly: 0.5309
+Prediction for pneumonia: 0.8902
+Prediction for tuberculosis: 0.7653
+Prediction for pulmonary_hypertension: 0.9412
+Final prediction result: {'predicted_disease': 'pulmonary_hypertension', 'confidence_score': 0.9412029981613159, 'all_predictions': {'cardiomegaly': 0.5308641195297241, 'pneumonia': 0.8901776671409607, 'tuberculosis': 0.765263557434082, 'pulmonary_hypertension': 0.9412029981613159}}
+Generating Grad-CAM for primary prediction: pulmonary_hypertension
+Could not create gradient model: The layer sequential_5 has never been called and thus has no defined input.
+Failed to generate Grad-CAM for pulmonary_hypertension
+Primary Grad-CAM generation failed
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Starting prediction for image: C:\Users\Kuayi\Desktop\Backend\ChestCare\media\xray_uploads\n.jpeg
+Prediction for cardiomegaly: 0.5309
+Prediction for pneumonia: 0.8902
+Prediction for tuberculosis: 0.7653
+Prediction for pulmonary_hypertension: 0.9412
+Final prediction result: {'predicted_disease': 'pulmonary_hypertension', 'confidence_score': 0.9412029981613159, 'all_predictions': {'cardiomegaly': 0.5308641195297241, 'pneumonia': 0.8901776671409607, 'tuberculosis': 0.765263557434082, 'pulmonary_hypertension': 0.9412029981613159}}
+Generating Grad-CAM for primary prediction: pulmonary_hypertension
+Could not create gradient model: The layer sequential_5 has never been called and thus has no defined input.
+Failed to generate Grad-CAM for pulmonary_hypertension
+Primary Grad-CAM generation failed
+Grad-CAM not found, attempting to generate for pulmonary_hypertension
+Could not create gradient model: The layer sequential_5 has never been called and thus has no defined input.
+Failed to generate Grad-CAM for pulmonary_hypertension
+Error generating missing Grad-CAM: Grad-CAM image could not be generated
+Starting prediction for image: C:\Users\Kuayi\Desktop\Backend\ChestCare\media\xray_uploads\c-xray_FANQigc.jpeg
+Prediction for cardiomegaly: 0.9997
+Prediction for pneumonia: 0.9954
+Prediction for tuberculosis: 0.9416
+Prediction for pulmonary_hypertension: 0.9335
+Final prediction result: {'predicted_disease': 'cardiomegaly', 'confidence_score': 0.9997194409370422, 'all_predictions': {'cardiomegaly': 0.9997194409370422, 'pneumonia': 0.9954084753990173, 'tuberculosis': 0.9416360259056091, 'pulmonary_hypertension': 0.9334887266159058}}
+Generating Grad-CAM for primary prediction: cardiomegaly
+Primary Grad-CAM image generated and saved successfully
+Generating Grad-CAM for different disease: pneumonia
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully
+Found conv layers: ['conv2d_46', 'conv2d_47', 'conv2d_48', 'conv2d_49', 'conv2d_50', 'conv2d_51', 'conv2d_52', 'conv2d_53', 'conv2d_54']
+Model initialized successfully for Grad-CAM
+Loaded cardiomegaly model successfully with Grad-CAM
+Found conv layers: ['conv2d_55', 'conv2d_56', 'conv2d_57', 'conv2d_58', 'conv2d_59', 'conv2d_60', 'conv2d_61', 'conv2d_62', 'conv2d_63']
+Model initialized successfully for Grad-CAM
+Loaded pneumonia model successfully with Grad-CAM
+Found conv layers: ['conv2d_39', 'conv2d_40', 'conv2d_41', 'conv2d_42', 'conv2d_43', 'conv2d_44', 'conv2d_45']
+Model initialized successfully for Grad-CAM
+Loaded tuberculosis model successfully with Grad-CAM
+Found conv layers: ['conv2d_34', 'conv2d_35', 'conv2d_36', 'conv2d_37', 'conv2d_38']
+Model initialized successfully for Grad-CAM
+Loaded pulmonary_hypertension model successfully with Grad-CAM
+ML models loaded successfully

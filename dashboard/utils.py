@@ -2,7 +2,8 @@
 from datetime import datetime
 from django.db.models import Count
 from .models import DiseaseCase, DiseaseStatistic, Disease
-
+import cloudinary.uploader
+from django.conf import settings
 
 def update_disease_statistics(disease=None, month=None, year=None):
     """
@@ -55,3 +56,73 @@ def update_disease_statistics(disease=None, month=None, year=None):
         )
 
     return True
+
+
+def upload_image_to_cloudinary(image_file, folder, public_id=None, transformation=None):
+    """
+    Upload an image to Cloudinary
+    
+    Args:
+        image_file: The image file to upload
+        folder: Cloudinary folder to store the image
+        public_id: Optional public ID for the image
+        transformation: Optional transformation parameters
+    
+    Returns:
+        dict: Upload result containing URL and other metadata
+    """
+    try:
+        upload_params = {
+            'folder': folder,
+            'resource_type': 'image',
+            'overwrite': True,
+        }
+
+        if public_id:
+            upload_params['public_id'] = public_id
+
+        if transformation:
+            upload_params['transformation'] = transformation
+        else:
+            # Default transformation for profile pictures
+            upload_params['transformation'] = [
+                {'width': 400, 'height': 400, 'crop': 'fill', 'gravity': 'face'},
+                {'quality': 'auto', 'fetch_format': 'auto'}
+            ]
+
+        result = cloudinary.uploader.upload(image_file, **upload_params)
+        return {
+            'success': True,
+            'url': result['secure_url'],
+            'public_id': result['public_id'],
+            'result': result
+        }
+
+    except Exception as e:
+        return {
+            'success': False,
+            'error': str(e)
+        }
+
+
+def delete_image_from_cloudinary(public_id):
+    """
+    Delete an image from Cloudinary
+    
+    Args:
+        public_id: The public ID of the image to delete
+    
+    Returns:
+        dict: Deletion result
+    """
+    try:
+        result = cloudinary.uploader.destroy(public_id)
+        return {
+            'success': True,
+            'result': result
+        }
+    except Exception as e:
+        return {
+            'success': False,
+            'error': str(e)
+        }
